@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/Contact.js"></script>
+    <script src="../JS/AddressBook.js"></script>
+    <title>Addressbook Form</title>
+</head>
+
+<!-- @Description- AddressBook Form with Add Logo -->
+
+<body>
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="../Assets/AddressBookLogo.png" alt="logo">
+            <div>
+                <span class="add-text">ADDRESS</span><br>
+                <span class="add-text addressbook">BOOK</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- @Description- Creating form with header line -->
+    <div class="Form-content">
+        <form class="form">
+            <div class="form-head">
+                 <div class="header-text">PERSONAL ADDRESS FORM</div>
+                 <div>
+                     <a href="../HTML/index.html"><img class="cancel-img" src="../Assets/close.png"></a>
+                 </div>
+           </div>
+
+           <!-- @Description- Creating input fields as name, address, city, state zip and phone number-->
+
+            <div class="row-content">
+               <label class="label text" for="fullname">Full Name
+               <input class="input" type="text" id="fullName" name="fullName" required>
+               <error-output class="text-error" for="text"></error-output>
+               </label>
+            </div>
+
+            <div class="row-content">
+                <label class="label text" for="phone">Phone Number
+                <input type="tel" id="tel" name="tel" class="input">
+                <error-output class ="text-error" for="text"></error-output>
+                </label>
+            </div>
+
+            <div class="row-content">
+                <label class="label text" for="address">Address
+                <input class="input address-input" type="text" id="address" required>
+                <error-output class ="text-error" for="text"></error-output>
+                </label>            
+            </div>
+
+            <div class="select-input-fields">
+                <label class="label text" for="city">City
+                <select id="city" name="city">
+                    <option >Select City</option>
+                    <option value="Bhillai">Garkha</option>
+                    <option value="Raipur">Saran</option>
+                    <option value="Noida">Delhi</option>
+                    <option value="Agra">Bangalore</option>
+                    <option value="Mumbai">BTM</option>
+                    <option value="Pune">Patna</option>
+                    <option value="Bhillai">Jabalpur</option>
+                    <option value="Raipur">Vijayawada</option>
+                    <option value="Noida">Kota</option>
+                    <option value="Agra">Solapur</option>
+                    <option value="Mumbai">Hubli–Dharwad</option>
+                    <option value="Pune">Tiruppur</option>
+                </select>
+                </label>
+
+                <label class="label-text-select" for="state">State
+                <select id="state" name="state">
+                    <option>Select State</option>
+                    <option value="Uttar Pradesh">Bihar</option>
+                    <option value="Maharashtra">Rajasthan</option>
+                    <option value="Chattisgarh">Madhya Pradesh</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Maharashtra">Jammu and Kashmir</option>
+                    <option value="Chattisgarh">Karnataka</option>
+                    <option value="Uttar Pradesh">Orissa</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Chattisgarh">Gujarat</option>
+                </select>
+                </label>
+
+                <label class="label-text-select" for="zip">Zip Code
+                <input class="input" type="text" id="zipcode" name="zipcode" required>
+                </label>
+            </div>
+            
+            <div class="buttonParent">
+                <div class="submit-reset">
+                    <button type="submit" class="button submitButton" id="submitButton">Add</button>
+                    <button type="reset" class="button resetButton">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
